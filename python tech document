@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
+
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Aldrich', sans-serif;
+  line-heinght: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%
+  border-right: solid;
+  border-color: rgba (0, 22, 22, 0.4);
+
+}
+
+  header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+  }
+
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+  }
+  
+  #navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  #navbar li{
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+
+  #navbar a{
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer; 
+  }
+  
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px; 
+    margin-bottom: 110px;
+  }
+  
+  section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+  }
+  
+  section li {
+    margin: 15px 0px 0px 20px;
+  }
+  
+  code {
+    display: block;
+    text-align: left;
+    white-sapce: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  @media only screen media and (max-width: 815px;){
+    
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+    
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%
+      max-height: 275px;
+      border: none;
+      z-index: 1 2px;
+      border-bottom: solid;
+    }
+    
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px;) {
+    #main-doc {
+      margin-left: -10px;
+    }
+    
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-widht: 233px;
+    }
+  }
+</style>
+<nav id="navbar">
+  
+  <header>Python Documentation</header>
+  
+     <ul>
+   <li>
+     <a class="navlink" href="#Introduction">Introduction</a></li>    
+       <li>
+         <a class="navlink" href="#Your_first_program">Your first program</a></li>
+       <li>
+         <a class="navlink"
+href="#Arithmetic_operations">Arithmetic operations</a></li>  
+       <li>
+         <a class"navlink"
+href="#Values_and_types">Values and types</a></li>
+       <li>
+     <a class="navlink"
+href="#Functions">Functions</a></li>  
+     <li>
+       <a class="navlink"
+href="#Strings">Strings</a></li>
+       <li>
+         <a class="navlink"
+href="#List">Lists</a></li>
+  
+   <li>
+         <a class="navlink"
+href="#Tuples">Tuples</a></li>
+       <li>
+         <a class="navlink"
+href="#References">References</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+      <section class="main" id="Introduction">
+                          <header>Introduction</header>
+           <article>
+      <p>
+         Python is a programming language that is widely used. It has many uses to include,  server-side web development, software development, system scrpitng and mathematics. It is compatible with most OS.
+        
+        Python operates like a command line. Similar to cmd application in windows. It itself is an interpreter it executes commands written in python programming language.
+        
+        To run a python file it must be ran in a pythin environment separate from where you wrote the code. Simply download the latest version of python with a quick Google search. You will also need a place to edit the code. A code eeditor like Sublime Text 3 should suffice but there are a plethora of choices.
+            </p>  
+           
+           <p>
+   Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+             </p>
+             
+      <p>
+        Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+Python has a simple syntax similar to the English language.
+Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+Python can be treated in a procedural way, an object-orientated way or a functional way.
+             </p>
+            </article>
+              </section>
+
+       <section class="main-section" id="Your_first_program">
+         <header>Your first program</header>
+      <p>
+        Your first program! Areyou excited?
+         </p>
+         <p>
+        Traditionally, the first program you write in a new language is called “Hello, World!” because all it does is display the words “Hello, World!”. In Python, it looks like this:
+
+>>> print('Hello, World!')
+This is an example of a print statement, although it doesn’t actually print anything on paper. It displays a result on the screen. In this case, the result is the words</p>
+<p>
+Hello, World!
+The quotation marks in the program mark the beginning and end of the text to be displayed; they don’t appear in the result.
+
+The parentheses indicate that print is a function. We’ll get to functions in Chapter 3.
+
+In Python 2, the print statement is slightly different; it is not a function, so it doesn’t use parentheses.
+
+>>> print 'Hello, World!'
+This distinction will make more sense soon, but that’s enough to get started.
+           </p>
+         </article>
+  </section>
+       
+<section class="main-section" id="Arethmetic_operation">
+  
+  <header>Arithmetic operation</header> 
+           <article>
+  <p>Python provides operators, which are special symbols that represent computations like addition and multiplication.</p>
+
+<p>
+             The operators +, -, and * perform addition, subtraction, and multiplication, as in the following examples:
+<code>
+>>> 40 + 2
+42
+>>> 43 - 1
+42
+>>> 6 * 7
+42
+             </code>
+The operator / performs division:
+<code>
+>>> 84 / 2
+42.0
+             </code>
+             </p>
+             <p>
+You might wonder why the result is 42.0 instead of 42. I’ll explain in the next section.
+
+Finally, the operator ** performs exponentiation; that is, it raises a number to a power:
+<code>
+>>> 6**2 + 6
+42
+             </code>
+             </p>
+  </article>
+</section>
+
+    <section id="main-section" id="Values_and_types">
+      <header>Values and types</header>
+  
+  <article>
+    
+    <p>
+      A value is one of the basic things a program works with, like a letter or a number. Some values we have seen so far are 2, 42.0, and 'Hello, World!'.
+
+
+      
+      These values belong to different types: 2 is an integer, 42.0 is a floating-point number, and 'Hello, World!' is a string, so-called because the letters it contains are strung together.</p>
+
+    <p>
+If you are not sure what type a value has, the interpreter can tell you:
+
+      <code>
+>>> type(2)
+<class 'int'>
+>>> type(42.0)
+<class 'float'>
+>>> type('Hello, World!')
+<class 'str'>
+  </code>
+<p>
+  In these results, the word “class” is used in the sense of a category; a type is a category of values.
+
+
+     Not surprisingly, integers belong to the type int, strings belong to str and floating-point numbers belong to float.</p>
+
+
+      <p>What about values like '2' and '42.0'? They look like numbers, but they are in quotation marks like strings.
+<code>
+>>> type('2')
+<class 'str'>
+>>> type('42.0')
+<class 'str'>
+  </code>
+  They’re strings.</p>
+
+  <p>  When you type a large integer, you might be tempted to use commas between groups of digits, as in 1,000,000. This is not a legal integer in Python, but it is legal:
+
+>>> 1,000,000
+(1, 0, 0)
+That’s not what we expected at all! Python interprets 1,000,000 as a comma-separated sequence of integers. We’ll learn more about this kind of sequence later.</p>
+  </article>
+  </section>
+  
+  <seciont class="main-section" id="Functions">
+  
+    <header></header>
+    
+    <article>
+      <p>
+        one example of a function call:</p>
+<code>
+>>> type(42)
+<class 'int'>
+  </code>
+  <p>
+The name of the function is type. The expression in parentheses is called the argument of the function. The result, for this function, is the type of the argument.</p>
+
+  <p>
+It is common to say that a function “takes” an argument and “returns” a result. The result is also called the return value.</p>
+<p>
+Python provides functions that convert values from one type to another. The int function takes any value and converts it to an integer, if it can, or complains otherwise:
+<code>
+>>> int('32')
+32
+>>> int('Hello')
+  </code></p>
+
+  <p>ValueError: invalid literal for int(): Hello
+int can convert floating-point values to integers, but it doesn’t round off; it chops off the fraction part:
+<code>
+>>> int(3.99999)
+3
+>>> int(-2.3)
+-2
+  </code>
+</p>
+  <p>Float converts integers and strings to floating-point numbers:
+<code>
+>>> float(32)
+32.0
+>>> float('3.14159')
+3.14159 </code> </p>
+  
+Finally, str converts its argument to a string:
+<code>
+>>> str(32)
+'32'
+>>> str(3.14159)
+'3.14159'
+  </code>
+  </article>
+      </section>
+           
+           <section class="main-section" id="Strings">
+                   <header>Strings</header>
+      <article>
+       <p> A string is a sequence of characters. You can access the characters one at a time with the bracket operator:
+<code>
+>>> fruit = 'banana'
+>>> letter = fruit[1]
+         </code>
+The second statement selects character number 1 from fruit and assigns it to letter.</p>
+
+  <p>The expression in brackets is called an index. The index indicates which character in the sequence you want (hence the name).</p>
+
+        <p>But you might not get what you expect:</p>
+<code>
+>>> letter
+'a'
+  <code>
+<p>For most people, the first letter of 'banana' is b, not a. But for computer scientists, the index is an offset from the beginning of the string, and the offset of the first letter is zero.</p>
+<p>
+    <code>
+>>> letter = fruit[0]
+>>> letter
+'b'
+  <code>
+    </p>
+
+      <p>So b is the 0th letter (“zero-eth”) of 'banana', a is the 1th letter (“one-eth”), and n is the 2th letter (“two-eth”).<p>
+
+<p>As an index you can use an expression that contains variables and operators:<p>
+<p>
+  <code>
+>>> i = 1
+>>> fruit[i]
+'a'
+>>> fruit[i+1]
+'n'
+  <code>
+      </p>
+
+    <p>But the value of the index has to be an integer. Otherwise you get:</p>
+<p>
+  <code>
+>>> letter = fruit[1.5]
+TypeError: string indices must be integers
+  </code>
+    </p>
+        
+             </article>
+    </section>
+           
+      <section class="main-section"
+ id="Lists">
+        <header>Lists</header>
+        <article>
+          <p> Like a string, a list is a sequence of values. In a string, the values are characters; in a list, they can be any type. The values in a list are called elements or sometimes items.</p>
+
+<p>There are several ways to create a new list; the simplest is to enclose the elements in square brackets ([ and ]):</p>
+<p>
+  <code>
+[10, 20, 30, 40]
+['crunchy frog', 'ram bladder', 'lark vomit']
+  </code>
+          </p>
+        </article>
+    </section>
+    
+    <section class="main-section" id="Tuples">
+      <header>Tuples</header>
+      <article>
+      <p>
+          A tuple is a sequence of values. The values can be any type, and they are indexed by integers, so in that respect tuples are a lot like lists. The important difference is that tuples are immutable.</p>
+<p>
+  Syntactically, a tuple is a comma-separated list of values:</p>
+<p>
+  <code>
+>>> t = 'a', 'b', 'c', 'd', 'e'
+    <code>
+      </p>
+    <p>Although it is not necessary, it is common to enclose tuples in parentheses:</p>
+    <p>
+<code>
+>>> t = ('a', 'b', 'c', 'd', 'e')
+    </code>
+    </p>
+    <p>To create a tuple with a single element, you have to include a final comma:</p>
+<p>
+  <code>
+>>> t1 = 'a',
+>>> type(t1)
+<class 'tuple'>
+  </code>
+    </p>
+
+    <p>A value in parentheses is not a tuple:</p>
+<p>
+  <code>
+>>> t2 = ('a')
+>>> type(t2)
+<class 'str'> 
+           </code>
+  </p>
+    </article>
+</section>
+           
+     <section class="main-section" id="References">      
+       <header>References</header>      <article>
+       <ul>
+         <li>
+           All Information on this documentation was taken from the Think Python.
+           <a
+     href="http://greenteapress.com/thinkpython2/html/thinkpython2013.html#sec141"
+           
+              target="_blank">Read more on Python here.</a>
+           
+         </li>
+       </ul>
+      </article>
+        </section>
+       </main>
+           </html>
+           
+           
+    
